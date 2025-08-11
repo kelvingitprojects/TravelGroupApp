@@ -9,8 +9,8 @@ export default function FeedScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Travel Feed</Text>
-        <Text style={styles.subtitle}>See what fellow travelers are up to</Text>
+        <Text style={styles.title}>Mzansi Feed</Text>
+        <Text style={styles.subtitle}>See what fellow South African travelers are up to</Text>
       </View>
       
       <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>

@@ -47,7 +47,7 @@ export default function TripCard({ trip }: TripCardProps) {
           </View>
           
           <View style={styles.priceContainer}>
-            <Text style={styles.price}>${trip.price}</Text>
+            <Text style={styles.price}>R{trip.price.toLocaleString()}</Text>
           </View>
         </View>
       </View>

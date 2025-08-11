@@ -19,7 +19,7 @@ export default function PaymentPlanSelector({ tripPrice, onPlanSelect }: Payment
       description: 'Pay small amounts daily/weekly until trip date',
       icon: Calendar,
       color: Colors.primary,
-      example: `~$${Math.round(tripPrice / 30)}/day`,
+      example: `~R${Math.round(tripPrice / 30)}/day`,
     },
     {
       id: 'three-parts' as const,
@@ -27,7 +27,7 @@ export default function PaymentPlanSelector({ tripPrice, onPlanSelect }: Payment
       description: 'Split payment into 3 equal milestones',
       icon: CreditCard,
       color: Colors.secondary,
-      example: `$${Math.round(tripPrice / 3)} × 3`,
+      example: `R${Math.round(tripPrice / 3).toLocaleString()} × 3`,
     },
     {
       id: 'full' as const,
@@ -35,7 +35,7 @@ export default function PaymentPlanSelector({ tripPrice, onPlanSelect }: Payment
       description: 'Pay the entire amount now',
       icon: Zap,
       color: Colors.success,
-      example: `$${tripPrice} now`,
+      example: `R${tripPrice.toLocaleString()} now`,
     },
   ];
 

@@ -10,8 +10,8 @@ export default function HomeScreen() {
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.scrollView} showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
-          <Text style={styles.title}>Discover Amazing Trips</Text>
-          <Text style={styles.subtitle}>Join group adventures around the world</Text>
+          <Text style={styles.title}>Discover Mzansi</Text>
+          <Text style={styles.subtitle}>Join group adventures across beautiful South Africa</Text>
         </View>
         
         <View style={styles.tripsContainer}>

@@ -63,6 +63,7 @@ export default function Leaderboard({ participants }: LeaderboardProps) {
               <Text style={styles.progressText}>{participant.paymentProgress}%</Text>
             </View>
             <Text style={styles.amountText}>${participant.amountPaid} paid</Text>
+            <Text style={styles.amountText}>R{participant.amountPaid.toLocaleString()} paid</Text>
           </View>
         </View>
       ))}

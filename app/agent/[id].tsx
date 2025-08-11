@@ -199,7 +199,7 @@ export default function AgentDetailScreen() {
             <View style={styles.priceRow}>
               <Text style={styles.priceLabel}>Price range: </Text>
               <Text style={styles.priceRange}>
-                ${agent.priceRange?.min} - ${agent.priceRange?.max}
+                R{agent.priceRange?.min?.toLocaleString()} - R{agent.priceRange?.max?.toLocaleString()}
               </Text>
             </View>
           </View>

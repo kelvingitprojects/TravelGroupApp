@@ -29,13 +29,13 @@ export default function AgentRegisterScreen() {
         <TouchableOpacity style={styles.backButton} onPress={() => router.back()}>
           <ArrowLeft size={24} color={Colors.textPrimary} />
         </TouchableOpacity>
-        <Text style={styles.title}>Become an Agent</Text>
+        <Text style={styles.title}>Become a Local Agent</Text>
         <View style={styles.headerSpacer} />
       </View>
 
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <Text style={styles.subtitle}>
-          Join our network of travel professionals and start organizing amazing group trips
+          Join our network of South African travel professionals and showcase the beauty of Mzansi to fellow travelers
         </Text>
 
         <View style={styles.form}>
@@ -43,7 +43,7 @@ export default function AgentRegisterScreen() {
             <Text style={styles.inputLabel}>Business/Agency Name *</Text>
             <View style={styles.inputContainer}>
               <User size={20} color={Colors.textSecondary} />
-              <Text style={styles.inputPlaceholder}>Enter your business name</Text>
+              <Text style={styles.inputPlaceholder}>e.g. Ubuntu Adventures</Text>
             </View>
           </View>
 
@@ -72,19 +72,19 @@ export default function AgentRegisterScreen() {
           </View>
 
           <View style={styles.inputGroup}>
-            <Text style={styles.inputLabel}>Location *</Text>
+            <Text style={styles.inputLabel}>Province/City *</Text>
             <View style={styles.inputContainer}>
               <MapPin size={20} color={Colors.textSecondary} />
-              <Text style={styles.inputPlaceholder}>City, Country</Text>
+              <Text style={styles.inputPlaceholder}>e.g. Cape Town, Western Cape</Text>
             </View>
           </View>
 
           <View style={styles.inputGroup}>
-            <Text style={styles.inputLabel}>Business Description *</Text>
+            <Text style={styles.inputLabel}>About Your South African Travel Business *</Text>
             <View style={[styles.inputContainer, styles.textAreaContainer]}>
               <FileText size={20} color={Colors.textSecondary} />
               <Text style={styles.inputPlaceholder}>
-                Tell us about your travel business and services...
+                Tell us about your South African travel business, specialties, and what makes your tours unique...
               </Text>
             </View>
           </View>
@@ -105,8 +105,8 @@ export default function AgentRegisterScreen() {
             <TouchableOpacity style={styles.uploadButton}>
               <Camera size={24} color={Colors.primary} />
               <View style={styles.uploadText}>
-                <Text style={styles.uploadTitle}>Business License</Text>
-                <Text style={styles.uploadSubtitle}>Upload a clear photo</Text>
+                <Text style={styles.uploadTitle}>Tourism Business License</Text>
+                <Text style={styles.uploadSubtitle}>SA Tourism registration</Text>
               </View>
             </TouchableOpacity>
 
@@ -121,16 +121,16 @@ export default function AgentRegisterScreen() {
             <TouchableOpacity style={styles.uploadButton}>
               <Camera size={24} color={Colors.primary} />
               <View style={styles.uploadText}>
-                <Text style={styles.uploadTitle}>Insurance Certificate</Text>
-                <Text style={styles.uploadSubtitle}>Travel insurance proof</Text>
+                <Text style={styles.uploadTitle}>Public Liability Insurance</Text>
+                <Text style={styles.uploadSubtitle}>Valid SA insurance certificate</Text>
               </View>
             </TouchableOpacity>
           </View>
 
           <View style={styles.termsSection}>
             <Text style={styles.termsText}>
-              By registering as an agent, you agree to our Terms of Service and 
-              Agent Agreement. Your application will be reviewed within 2-3 business days.
+              By registering as a local agent, you agree to our Terms of Service and 
+              Agent Agreement. Applications are reviewed within 2-3 business days by our South African team.
             </Text>
           </View>
 

@@ -70,6 +70,7 @@ export default function TripDetailScreen() {
               </View>
             </View>
             <Text style={styles.price}>${trip.price} per person</Text>
+            <Text style={styles.price}>R{trip.price.toLocaleString()} per person</Text>
           </View>
 
           <Countdown tripDate={trip.date} />

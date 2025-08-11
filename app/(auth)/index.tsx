@@ -32,8 +32,8 @@ export default function AuthScreen() {
         />
         <View style={styles.overlay} />
         <View style={styles.headerContent}>
-          <Text style={styles.title}>TravelTogether</Text>
-          <Text style={styles.subtitle}>Join amazing group adventures</Text>
+          <Text style={styles.title}>Mzansi Trips</Text>
+          <Text style={styles.subtitle}>Explore South Africa together</Text>
         </View>
       </View>
 

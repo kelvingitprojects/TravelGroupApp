@@ -93,14 +93,14 @@ export default function AgentsScreen() {
   return (
     <SafeAreaView style={styles.container}>
       <View style={styles.header}>
-        <Text style={styles.title}>Travel Agents</Text>
-        <Text style={styles.subtitle}>Find the perfect agent for your next adventure</Text>
+        <Text style={styles.title}>Local Travel Agents</Text>
+        <Text style={styles.subtitle}>Find trusted South African travel specialists</Text>
         
         <View style={styles.searchContainer}>
           <Search size={20} color={Colors.textSecondary} style={styles.searchIcon} />
           <TextInput
             style={styles.searchInput}
-            placeholder="Search agents, locations, or specialties..."
+            placeholder="Search agents, provinces, or specialties..."
             value={searchQuery}
             onChangeText={setSearchQuery}
             placeholderTextColor={Colors.textTertiary}
@@ -148,12 +148,12 @@ export default function AgentsScreen() {
 
         <View style={styles.becomeAgentSection}>
           <View style={styles.becomeAgentCard}>
-            <Text style={styles.becomeAgentTitle}>Want to become an agent?</Text>
+            <Text style={styles.becomeAgentTitle}>Want to showcase South Africa?</Text>
             <Text style={styles.becomeAgentText}>
-              Join our network of travel professionals and start organizing amazing group trips.
+              Join our network of local travel professionals and start organizing amazing South African adventures.
             </Text>
             <Button 
-              title="Apply to Become an Agent" 
+              title="Become a Local Agent" 
               variant="primary" 
               onPress={() => router.push('/(auth)/agent-register')}
               style={styles.becomeAgentButton}

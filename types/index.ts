@@ -1,3 +1,23 @@
+export interface SavingsGroup {
+  id: string;
+  tripId: string;
+  name: string;
+  targetAmount: number;
+  currentAmount: number;
+  members: SavingsGroupMember[];
+  createdAt: string;
+  targetDate: string;
+  isActive: boolean;
+}
+
+export interface SavingsGroupMember {
+  id: string;
+  name: string;
+  avatar?: string;
+  contribution: number;
+  joinedAt: string;
+}
+
 export interface User {
   id: string;
   name: string;
@@ -7,6 +27,9 @@ export interface User {
   tripsJoined: string[];
   tripsInterested: string[];
   ratingsGiven: Rating[];
+  totalSaved?: number;
+  tripsCompleted?: number;
+  activeSavings?: SavingsGroup[];
 }
 
 export interface Trip {
